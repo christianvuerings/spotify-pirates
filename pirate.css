@@ -1,0 +1,57 @@
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+h1 {
+  color: #333;
+  font-size: 24px;
+  padding: 20px;
+  text-align: center;
+}
+
+body {
+  background: #ECEBE8;
+}
+
+#list {
+  border: 1px solid #ccc;
+  color: #333;
+  margin: 0 20px;
+}
+#list .name {
+  float: left;
+  width: 80%;
+}
+#list .name a {
+  color: #666;
+  display: block;
+  padding: 5px;
+}
+#list .name img {
+  float: left;
+  margin: 5px;
+}
+#list .download {
+  float: right;
+  width: 20%;
+}
+#list .download a {
+  color: #339BD1;
+  display: block;
+  float: left;
+  padding: 5px;
+}
+#list .download a:hover {
+  color: #1168A9;
+}
+#list .download a[href^="http:"]::after {
+  content: '';
+  margin: 0;
+}
+#list li {
+  overflow: hidden;
+}
+#list li:nth-child(odd) {
+  background: #F2F2F2;
+}
+#list li:nth-child(even) {
+  background: #fff;
+}
